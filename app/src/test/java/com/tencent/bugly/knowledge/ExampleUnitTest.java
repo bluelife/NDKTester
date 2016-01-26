@@ -1,4 +1,4 @@
-package com.bluelife.test.ndktest;
+package com.tencent.bugly.knowledge;
 
 import org.junit.Test;
 

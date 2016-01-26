@@ -1,4 +1,4 @@
-package com.bluelife.test.ndktest;
+package com.tencent.bugly.knowledge;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

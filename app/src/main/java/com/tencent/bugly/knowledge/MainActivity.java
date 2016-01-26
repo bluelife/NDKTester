@@ -1,11 +1,10 @@
-package com.bluelife.test.ndktest;
+package com.tencent.bugly.knowledge;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //167. java.lang.UnsatisfiedLinkError test
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -29,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        Log.i(TAG,setVersion());
+        Native nativeCall=new Native();
+        nativeCall.SetVersionCode();
+        //Log.i(TAG,SetVersionCode());
     }
 
     @Override
@@ -53,8 +55,5 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    static {
-        System.loadLibrary("native");
-    }
-    public native String setVersion();
+
 }

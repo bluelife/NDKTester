@@ -1,4 +1,4 @@
-package com.bluelife.test.ndktest;
+package com.tencent.bugly.knowledge;
 
 import android.app.Application;
 
@@ -13,5 +13,6 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         CrashReport.initCrashReport(this, "900018418",true);
+
     }
 }

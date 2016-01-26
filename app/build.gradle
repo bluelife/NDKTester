@@ -6,7 +6,6 @@ model {
         buildToolsVersion="23.0.2"
         ndk {
             moduleName="native"
-
         }
         compileOptions.with {
             sourceCompatibility=JavaVersion.VERSION_1_7
@@ -18,6 +17,7 @@ model {
             targetSdkVersion.apiLevel=23
             versionCode=1
             versionName="1.0"
+
 
         }
         buildTypes {
